@@ -1,24 +1,32 @@
-/* Fundo degradê azul marinho → laranja suave */
-.login-background {
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Container centralizado */
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(135deg, #0B1F4D, #FF9E60);
 }
 
-/* Card centralizado e clean */
+/* Card do login */
 .login-card {
   background: white;
-  padding: 40px;
+  padding: 40px 35px;
   width: 350px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   text-align: center;
 }
 
 /* Logo */
-.login-card .logo-login {
+.logo-login {
   width: 80px;
   margin-bottom: 15px;
 }
@@ -39,7 +47,7 @@
 /* Inputs com ícones */
 .input-group {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .input-group .icon {
@@ -52,7 +60,7 @@
 .input-group input {
   width: 100%;
   padding: 12px 15px 12px 40px;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 2px solid #90CAF9;
   font-size: 1em;
 }
@@ -62,7 +70,7 @@
   outline: none;
 }
 
-/* Botão chamativo */
+/* Botão grande e chamativo */
 button {
   width: 100%;
   padding: 14px;
@@ -86,7 +94,7 @@ button:hover {
   font-size: 0.9em;
 }
 
-/* Responsivo */
+/* Responsivo para celular */
 @media screen and (max-width: 480px) {
   .login-card {
     width: 90%;
