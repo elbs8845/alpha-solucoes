@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alpha Soluções - Login</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Soluções - Login</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="login-box">
+
+<div class="login-background">
+  <div class="login-card">
     <img src="logo.png" alt="Logo Alpha Soluções" class="logo-login">
     <h1>Alpha Soluções</h1>
-    <p>Login de Acesso</p>
-    <input type="text" id="username" placeholder="Usuário">
-    <input type="password" id="password" placeholder="Senha">
+    <p>Bem-vindo! Faça login para continuar</p>
+
+    <div class="input-group">
+      <i class="fa fa-user icon"></i>
+      <input type="text" id="username" placeholder="Usuário">
+    </div>
+
+    <div class="input-group">
+      <i class="fa fa-lock icon"></i>
+      <input type="password" id="password" placeholder="Senha">
+    </div>
+
     <button onclick="login()">Entrar</button>
-    <p id="error-msg" style="color:red;"></p>
+    <p id="error-msg" class="error-msg"></p>
   </div>
-  <script src="login.js"></script>
+</div>
+
+<script src="login.js"></script>
 </body>
 </html>
