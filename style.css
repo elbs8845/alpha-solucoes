@@ -7,13 +7,13 @@
   background: linear-gradient(135deg, #0B1F4D, #FF9E60);
 }
 
-/* Card centralizado */
+/* Card centralizado e clean */
 .login-card {
   background: white;
   padding: 40px;
-  width: 360px;
+  width: 350px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   text-align: center;
 }
 
@@ -26,20 +26,20 @@
 /* Título e subtítulo */
 .login-card h1 {
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #0B1F4D;
 }
 
 .login-card p {
   font-size: 1em;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #555;
 }
 
 /* Inputs com ícones */
 .input-group {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .input-group .icon {
@@ -55,16 +55,14 @@
   border-radius: 12px;
   border: 2px solid #90CAF9;
   font-size: 1em;
-  transition: border 0.3s, box-shadow 0.3s;
 }
 
 .input-group input:focus {
   border-color: #0B1F4D;
-  box-shadow: 0 0 5px rgba(11,31,77,0.5);
   outline: none;
 }
 
-/* Botão maior e chamativo */
+/* Botão chamativo */
 button {
   width: 100%;
   padding: 14px;
@@ -72,24 +70,23 @@ button {
   border: none;
   background: #FF6D00;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.1em;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.3s;
 }
 
 button:hover {
   background: #FF8C42;
-  transform: translateY(-2px);
 }
 
 /* Mensagem de erro discreta */
 .error-msg {
   color: red;
-  margin-top: 12px;
+  margin-top: 10px;
   font-size: 0.9em;
 }
 
-/* Responsivo para celular */
+/* Responsivo */
 @media screen and (max-width: 480px) {
   .login-card {
     width: 90%;
@@ -105,7 +102,7 @@ button:hover {
   }
 
   button {
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 12px;
   }
 }
