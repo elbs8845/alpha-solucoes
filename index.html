@@ -1,80 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alpha Soluções - Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Soluções - Login</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo Alpha Soluções" class="logo">
-    <h1>Alpha Soluções</h1>
-    <p>Dashboard de Vendas</p>
-  </header>
-
-  <section class="stats">
-    <div>
-      <h3>Total Leads</h3>
-      <p id="total-leads">0</p>
-    </div>
-    <div>
-      <h3>Total Vendas</h3>
-      <p id="total-vendas">0</p>
-    </div>
-    <div>
-      <h3>% da Meta</h3>
-      <p id="meta-percent" class="meta-percent">0%</p>
-    </div>
-  </section>
-
-  <section class="forms">
-    <h2>Adicionar Lead</h2>
-    <input type="text" id="lead-name" placeholder="Nome do Lead">
-    <button onclick="addLead()">Adicionar Lead</button>
-
-    <h2>Registrar Venda</h2>
-    <input type="text" id="venda-name" placeholder="Nome do Cliente">
-    <input type="number" id="venda-valor" placeholder="Valor da Venda">
-    <button onclick="addVenda()">Registrar Venda</button>
-
-    <h2>Agendar Atendimento</h2>
-    <input type="text" id="agenda-nome" placeholder="Nome do Cliente">
-    <input type="datetime-local" id="agenda-data">
-    <button onclick="addAgendamento()">Agendar</button>
-
-    <!-- Painel de usuários (Admin) -->
-    <div id="user-management" style="display:none;">
-      <h2>Gerenciar Usuários (Admin)</h2>
-      <input type="text" id="new-username" placeholder="Novo Usuário">
-      <input type="password" id="new-password" placeholder="Senha">
-      <select id="new-role">
-        <option value="admin">Admin</option>
-        <option value="supervisor">Supervisor</option>
-        <option value="vendedor">Vendedor</option>
-      </select>
-      <button onclick="addUser()">Adicionar Usuário</button>
-
-      <h3>Usuários existentes:</h3>
-      <ul id="user-list"></ul>
-    </div>
-  </section>
-
-  <section class="tables">
-    <h2>Leads</h2>
-    <ul id="leads-list"></ul>
-
-    <h2>Vendas</h2>
-    <ul id="vendas-list"></ul>
-
-    <h2>Agendamentos</h2>
-    <ul id="agenda-list"></ul>
-  </section>
-
-  <footer>
-    <p>Desenvolvido por Elielma Barbosa</p>
-  </footer>
-
-  <script src="script.js"></script>
+<div class="login-box">
+  <img src="logo.png" alt="Logo Alpha Soluções" class="logo-login">
+  <h1>Alpha Soluções</h1>
+  <p>Login de Acesso</p>
+  <input type="text" id="username" placeholder="Usuário">
+  <input type="password" id="password" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+  <p id="error-msg" style="color:red;"></p>
+</div>
+<script src="login.js"></script>
 </body>
 </html>
